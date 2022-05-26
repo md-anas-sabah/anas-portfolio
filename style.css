@@ -18,7 +18,8 @@ p {
 }
 .nav {
   display: flex;
-  background-color: #eef0e7;
+  /* background-color: #eef0e7; */
+  background-color: #768082;
   justify-content: space-between;
   border-bottom: 1px solid grey;
   height: 100px;
@@ -91,7 +92,7 @@ p {
 }
 .about > p {
   font-family: georgia, serif;
-  color: white;
+  color: rgb(179, 60, 60);
   font-size: 1.2rem;
   letter-spacing: 0.1em;
   line-height: 200%;
@@ -207,7 +208,10 @@ p {
   background-color: white;
 }
 .section-project .btn-moreProjects a {
-  color: white;
+  color: black;
+}
+.section-project .btn-moreProjects:hover {
+  box-shadow: 3px 4px;
 }
 
 footer {
