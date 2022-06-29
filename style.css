@@ -42,6 +42,13 @@ p {
   font-size: 24px;
   font-family: Satisfy;
 }
+.nav-list {
+  display: flex;
+  padding: 30px;
+  font-size: 24px;
+  font-family: Satisfy;
+  gap: 20px;
+}
 .nav-list-items {
   display: flex;
   flex-direction: row;
@@ -213,6 +220,36 @@ p {
 .section-project .btn-moreProjects:hover {
   box-shadow: 3px 4px;
 }
+.section-blogs {
+  margin: 2rem auto 0rem auto;
+  max-width: 950px;
+  background-color: var(--off-white);
+  padding: 2rem;
+}
+
+.section-blogs h1 {
+  text-align: center;
+}
+
+.section-blogs p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.section-blogs button {
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 2rem;
+  outline: none;
+  background-color: black;
+}
+
+.section-blogs a {
+  color: white;
+}
 
 footer {
   display: flex;
@@ -234,4 +271,144 @@ footer .social a {
   font-size: larger;
   text-decoration: none;
   color: black;
+}
+.blogs {
+  max-width: 950px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 420px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.blog img {
+  width: 420px;
+  height: auto;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.blog-date {
+  font-size: smaller;
+  font-weight: 100;
+  color: gray;
+}
+
+.blog-link {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 180px;
+  border-radius: 20px;
+}
+
+.blog-footer {
+  width: 100%;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: black;
+    color: white;
+  }
+
+  .header-image {
+    width: 250px;
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .about,
+  .section-tech,
+  .section-project,
+  .blogs,
+  .section-blogs {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  nav .nav-list-items a {
+    padding: 7px;
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: "kalam", cursive;
+  }
+
+  .about p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .tech img {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  .section-blogs {
+    background-color: white;
+  }
+
+  footer > p {
+    padding: 10px;
+  }
+
+  .social {
+    margin: 5px;
+  }
+
+  .section-project .btn-moreProjects {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 2rem;
+    outline: none;
+    background-color: black;
+  }
+
+  .blog {
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+
+  .blog-link {
+    font-size: 1rem;
+    width: 140px;
+  }
+}
+
+@media (min-width: 998px) {
+  .blog-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+  }
 }
