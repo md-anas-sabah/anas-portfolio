@@ -327,7 +327,28 @@ footer .social a {
     background-color: black;
     color: white;
   }
-
+  .nav__left {
+    font-size: 10px;
+  }
+  .nav__right {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav__right > a {
+    font-size: 20px;
+    margin-left: -20px;
+  }
+  .profile > h1 {
+    width: 200px;
+    font-size: 29px;
+  }
+  .profile > p {
+    width: 222px;
+    font-size: 16px;
+  }
+  .btn-moreProjects > a{
+    color: white !important;
+  }
   .header-image {
     width: 250px;
     display: block;
@@ -365,7 +386,7 @@ footer .social a {
   }
 
   .tech img {
-    width: 50px;
+    width: 49px;
     display: flex;
     align-items: center;
     margin: auto;
